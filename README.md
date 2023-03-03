@@ -1,6 +1,9 @@
-# Getting Started with Create React App
+This project was created with Create React App (https://github.com/facebook/create-react-app).
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+It is realization of one tweet, you can subscribe for the tweet and unsubscribe as well. The number of followers is going to be changed accordingly.
+The tweet's data  is being saved after refreshing the page, it was realized with the help of local-storage.
+
+The tweet was styled with styled-components (https://styled-components.com/)
 
 ## Available Scripts
 
