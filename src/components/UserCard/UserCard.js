@@ -13,7 +13,7 @@ import {
 
 export const UserCard = () => {
   const [value, setValue] = useLocalStorage("value", 100500);
-  const [follower, setFollow] = useLocalStorage("follower", false);
+
 
   const formatedValue = new Intl.NumberFormat("en").format(value);
 
@@ -33,12 +33,7 @@ export const UserCard = () => {
         <FollowersInfo>
         {formatedValue} Followers
         </FollowersInfo>
-        <Button
-          follower={follower}
-          setFollow={setFollow}
-          value={value}
-          setValue={setValue}
-        />
+        <Button value={value} setValue={setValue} />
       </Wrapper>
     </article>
   );

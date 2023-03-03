@@ -1,6 +1,9 @@
 import { FollowBtn } from "./FollowBtn.styled";
+import { useLocalStorage } from "../../hooks/useLocalStorage";
 
-export const Button = ({ value, follower, setFollow, setValue }) => {
+export const Button = ({ value, setValue }) => {
+  const [follower, setFollow] = useLocalStorage("follower", false);
+
   const onBtnClick = (event) => {
     setFollow(!follower);
     if (!follower) {
@@ -12,8 +15,8 @@ export const Button = ({ value, follower, setFollow, setValue }) => {
   };
 
   return (
-    <FollowBtn type="button" follower = {follower} onClick={onBtnClick}>
-      {!follower ? "Follow": "Following"}
+    <FollowBtn type="button" follower={follower} onClick={onBtnClick}>
+      {!follower ? "Follow" : "Following"}
     </FollowBtn>
   );
 };
