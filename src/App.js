@@ -2,9 +2,7 @@ import React from "react";
 import { UserCard } from "./components/UserCard/UserCard";
 
 function App() {
-  return (
-      <UserCard /> 
-  );
+  return <UserCard />;
 }
 
 export default App;

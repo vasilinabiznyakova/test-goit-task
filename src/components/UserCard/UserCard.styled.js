@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import img from "../../img/bgImg.svg";
+import bgImg from "../../img/bg_img.png";
 import { ReactComponent as Boy } from "../../img/Boy.svg";
 
 export const Wrapper = styled.div`
@@ -22,7 +22,7 @@ export const Header = styled.header`
   padding-bottom: 172px;
   padding-left: 20px;
   background-position: 36px 28px;
-  background-image: url(${img});
+  background-image: url(${bgImg});
   background-size: "contain";
   background-repeat: no-repeat;
   background-size: 308px 168px;
@@ -33,8 +33,8 @@ export const BorderEl = styled.div`
   height: 8px;
   margin-bottom: 62px;
   background: #ebd8ff;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06),
-    inset 0px -2px 4px #ae7be3, inset 0px 4px 2px #fbf8ff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06), inset 0px -2px 4px #ae7be3,
+    inset 0px 4px 2px #fbf8ff;
 `;
 
 export const UserLogo = styled(Boy)`
@@ -57,7 +57,7 @@ export const TweetInfo = styled.p`
 `;
 
 export const FollowersInfo = styled.p`
-  margin-bottom: 24px;
+  margin-bottom: 26px;
   font-family: "Montserrat500";
   font-size: 20px;
   line-height: 24px;
